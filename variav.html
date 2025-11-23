@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript programs: Variables,Functions,Objects</h1>
+    <div id="output"></div>
+    <script>
+        //----Variables-----
+        let name="shreya";
+        const pi=3.14;
+        var age=20;
+        //----Functions---
+        function greet(userName){
+            return "hello, "+userName+"!";
+        }
+        const square=(num)=>num*num;
+        //---Objects----
+        const out=document.getElementById("output");
+        out.innerHTML=`
+           <p><b>variables</b><br>
+              name=${name},age=${age},pi=${pi}</p>
+            <p><b>Functions</b><br>
+                greet("shreya")->${greet(name)}<br>
+                square(5)->${square(5)}</p>
+                <p><b>objects</b><br>
+                    student.displayinfo()->${student.displayinfo()}<br>
+                    maths marks=${student.marks.math},science marks=${student.marks.science}
+                    `;
+    </script>
+</body>
+</html>
